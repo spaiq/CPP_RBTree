@@ -383,7 +383,7 @@ public:
 #include <algorithm>
 void test()
 {
-    std::vector<int> v(8);
+    std::vector<int> v(10);
     std::iota(v.begin(), v.end(), 0);
     std::map<int, int> heights, root_data;
     std::map<int, int>::iterator itr;
@@ -429,6 +429,7 @@ int main()
     };
 
     test();
+    system("PAUSE");
     return 0;
     
     int random;
