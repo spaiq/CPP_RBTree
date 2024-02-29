@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZUT_RBTree", "ZUT_RBTree.vcxproj", "{CA6447AA-1E28-4891-A664-0B68E6DDAB66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RBTree", "RBTree.vcxproj", "{CA6447AA-1E28-4891-A664-0B68E6DDAB66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

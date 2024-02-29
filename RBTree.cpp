@@ -1,4 +1,10 @@
-﻿#include <iostream>
+﻿/*****************
+* Red-Black Tree
+* @author Bartłomiej Juszczyk
+*
+*****************/
+
+#include <iostream>
 #include <sstream>
 #include <stack>
 
@@ -112,7 +118,6 @@ private:
         return;
     }
 
-    //h)
     void leftRotate(Node* node) {
         Node* temp = node->right;
         node->right = temp->left;
@@ -133,7 +138,6 @@ private:
         node->parent = temp;
     }
 
-    //i)
     void rightRotate(Node* node) {
         Node* temp = node->left;
         node->left = temp->right;
@@ -182,7 +186,6 @@ public:
         return mRoot;
     }
 
-    //a)
     template <typename Comp>
     Node* findElement(const T& el, Comp comp_less) const {
         auto temp = mRoot;
@@ -199,17 +202,14 @@ public:
         return temp;
     }
 
-    //b)
     std::string preOrder() const {
         return preOrderHelper(this->mRoot);
     }
 
-    //c)
     std::string inOrder() const {
         return inOrderHelper(this->mRoot);
     }
 
-    //d)
     void deleteTree() {
         if (mRoot == nullptr) return;
         auto temp = mRoot;
@@ -235,12 +235,10 @@ public:
         return;
     }
 
-    //e)
     unsigned treeHeight() const {
         return treeHeightHelper(this->mRoot);
     }
 
-    //f)
     template <typename Comp>
     void append(const T& data, Comp comp_less) {
         if (!mRoot) {
@@ -312,7 +310,6 @@ public:
         return;
     }
 
-    //g)
     std::string toString() {
         if (mRoot == NULL)
             return "Tree is empty";
@@ -422,6 +419,7 @@ std::ostream& operator<< (std::ostream& out, const SomeClass& obj) {
 }
 
 
+// Example usage
 int main()
 {
     auto comp_less = [](const SomeClass& a, const SomeClass& b) {
